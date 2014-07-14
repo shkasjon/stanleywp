@@ -22,20 +22,22 @@
 
   <!-- +++++ Footer Section +++++ -->
 <footer id="footer">
-<div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <?php dynamic_sidebar('footer-left'); ?>
-        </div>
-        <div class="col-lg-4">
-          <?php dynamic_sidebar('footer-middle'); ?>
-        </div>
-        <div class="col-lg-4">
-          <?php dynamic_sidebar('footer-right'); ?>
-        </div>
-      
-      </div><!-- /row -->
-    </div><!-- /container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <?php dynamic_sidebar('footer-left'); ?>
+      </div>
+      <div class="col-lg-4">
+        <?php dynamic_sidebar('footer-middle'); ?>
+      </div>
+      <div class="col-lg-4">
+        <?php dynamic_sidebar('footer-right'); ?>
+      </div>
+    </div><!-- /row -->
+    <div clas="row">
+      <?php dynamic_sidebar('footer-terms'); ?>
+    </div>
+  </div><!-- /container -->
 </footer><!-- end #footer -->
 
 
