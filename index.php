@@ -70,7 +70,7 @@
                     </div>
                   </header>
 
-                  <?php the_content(); ?>
+                  <?php the_content('Continue reading...', false); ?>
 
                   <?php custom_link_pages(array(
                     'before' => '<nav class="pagination"><ul>' . __(''),
