@@ -200,3 +200,16 @@ bd {
 /* WP User Avatar */
 
 .wp-user-avatar {margin: 0;}
+
+#mc_embed_signup{
+  background: #fff;
+  clear: left;
+  margin-top: 60px;
+}
+
+#mc_embed_signup form {
+  border: 10px solid #ddd;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
