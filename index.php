@@ -53,24 +53,22 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-
-                  <section class="post-meta">          
-                      <p class="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?><ba><?php the_author_meta( 'display_name' ); ?></ba></p>
-                         <p><bd><time class="post-date"><?php the_date(); ?></time></bd></p>                
-                  </section><!-- end of .post-meta -->
-
-
                   <section class="post-entry">
-                    <?php if ( has_post_thumbnail()) : ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-                      <?php the_post_thumbnail(); ?>
-                    </a>
-                  <?php endif; ?>
-
                   <header>
-                    <h4 class="post-title"><?php the_title(); ?></h4>
+                    <h4 class="post-title">
+                      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
+                        <?php the_title(); ?>
+                      </a>
+                      <?php if ($category = array_values(get_the_terms( false, 'category' ))[0]) { ?>
+                      <a href="<?php echo get_category_link( $category->term_id ) ?>" class="category-tag">
+                        <?php echo $category->name ?>
+                      </a>
+<?php } ?>
+                    </h4>
+                    <div class="post-meta">
+                      <?php echo get_the_date(); ?></time> by <?php the_author_meta('display_name'); ?>
+                    </div>
                   </header>
-
 
                   <?php the_content(); ?>
 
