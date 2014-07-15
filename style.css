@@ -202,12 +202,12 @@ bd {
 .wp-user-avatar {margin: 0;}
 
 #mc_embed_signup{
-  background: #fff;
   clear: left;
   margin-top: 60px;
 }
 
 #mc_embed_signup form {
+  background: #fff;
   border: 10px solid #ddd;
   text-align: center;
   width: 80%;
