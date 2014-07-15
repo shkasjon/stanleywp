@@ -48,8 +48,10 @@
                           
                           <footer class="article-footer">           
                             <div class="post-edit"><?php edit_post_link(__('Edit', 'gents')); ?></div> 
+			<?php comments_template( '', true ); ?>
                           </footer>
                         </article><!-- end of #post-<?php the_ID(); ?> -->
+
                         
                       <?php endwhile; ?> 
                       
@@ -75,7 +77,6 @@
                  </footer>
 
                </article>
-
              <?php endif; ?>  
            </div><!-- /col-lg-8 -->
          </div><!-- /row -->
